@@ -1,4 +1,5 @@
-class Square extends Retangle{
+class Square extends Retangle implements Colorable,GetArea{
+
     public  Square(){
     }
     public Square(double side){
@@ -33,4 +34,8 @@ class Square extends Retangle{
                 +super.toString();
     }
 
+    @Override
+    public void howToColer() {
+        System.out.println("Coler all four sides");
+    }
 }

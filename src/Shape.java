@@ -1,4 +1,4 @@
-public class Shape {
+public class Shape implements GetArea{
     private String coler = "red";
     private boolean filled = true;
 
@@ -35,6 +35,12 @@ public class Shape {
             return "\nA Shape with color of " + coler +
                     " and not filled";
         }
+    }
+
+
+    @Override
+    public double getArea() {
+        return getArea();
     }
 }
 

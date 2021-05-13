@@ -1,4 +1,4 @@
-class Retangle extends Shape{
+class Retangle extends Shape implements GetArea{
     private double width = 1.0;
     private double length = 1.0;
     public Retangle(){}
@@ -27,6 +27,7 @@ class Retangle extends Shape{
     public void setLength(double length) {
         this.length = length;
     }
+
     public double getArea(){
         return width*length;
     }
@@ -37,7 +38,7 @@ class Retangle extends Shape{
     @Override
     public String toString() {
         return "\nA Rectangle with width=" +width +
-                "and " + "length=" +length+
+                " and " + "length=" +length+
                 " which is a subclass of"+super.toString();
     }
 }
