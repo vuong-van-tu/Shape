@@ -36,8 +36,8 @@ class Retangle extends Shape{
 
     @Override
     public String toString() {
-        return "A Rectangle with width=" +width +
+        return "\nA Rectangle with width=" +width +
                 "and " + "length=" +length+
-                "which is a subclass of"+super.toString();
+                " which is a subclass of"+super.toString();
     }
 }

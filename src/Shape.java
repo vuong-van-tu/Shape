@@ -29,10 +29,10 @@ public class Shape {
     @Override
     public String toString() {
         if (filled) {
-            return "A Shape with color of " + coler +
+            return "\nA Shape with color of " + coler +
                     " and filled";
         } else {
-            return "A Shape with color of " + coler +
+            return "\nA Shape with color of " + coler +
                     " and not filled";
         }
     }

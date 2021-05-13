@@ -1,4 +1,4 @@
-class Circle extends Shape {
+class Circle extends Shape implements Resizeable{
     private double radius = 1.0;
 
     public Circle() {
@@ -31,8 +31,13 @@ class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "A Square with side=" + radius +
+        return " A Square with side=" + radius +
                 ", which is a subclass of " +
                 super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        radius = radius * percent;
     }
 }
